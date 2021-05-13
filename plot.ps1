@@ -13,6 +13,8 @@ $app_version = "1.1.5"
 
 Set-Location -Path C:\Users\$CurrentUserName\AppData\Local\chia-blockchain\app-$app_version\resources\app.asar.unpacked\daemon
 
+Write-host "..:: Starte Plotter ::.." -ForegroundColor Green -BackgroundColor Black
 chia.exe plots create -f $Farmer_Public_Key -p $Pool_Public_Key -k 32 -n $Plots_erstellen -r $Threads -b $Memory -t $temp_path -d $farming_path
+Write-host "..:: Plotten abgeschlossen ::.." -ForegroundColor Green -BackgroundColor Black
 
 Set-Location -Path D:\GitHub\create_chia_plots
