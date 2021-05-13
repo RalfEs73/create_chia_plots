@@ -8,9 +8,6 @@ $app_version = "1.1.5"
 $CurrentUser = [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
 $CurrentUserName = $CurrentUser.split("\")[1]
 
-
 Write-Host "Erstelle Plot"
-
-# C:\Users\ralfes\AppData\Local\chia-blockchain\app-1.1.5\resources\app.asar.unpacked\daemon\chia plots create -f $Farmer_Public_Key -p $Pool_Public_Key -k 32 -n 1 -r 2 -b 4608 -t $temp_path -d $farming_path
-
+C:\Users\ralfes\AppData\Local\chia-blockchain\app-1.1.5\resources\app.asar.unpacked\daemon\chia plots create -f $Farmer_Public_Key -p $Pool_Public_Key -k 32 -n 1 -r 2 -b 4608 -t $temp_path -d $farming_path
 Write-Host "Done"
