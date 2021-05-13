@@ -7,9 +7,11 @@ $Plots_erstellen = 1
 
 $Threads = 2
 $Memory = 4608
+
+$app_version = "1.1.5"
+
 $CurrentUser = [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
 $CurrentUserName = $CurrentUser.split("\")[1]
-$app_version = "1.1.5"
 
 Set-Location -Path C:\Users\$CurrentUserName\AppData\Local\chia-blockchain\app-$app_version\resources\app.asar.unpacked\daemon
 
