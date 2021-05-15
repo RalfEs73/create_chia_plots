@@ -5,9 +5,11 @@ $Plots_erstellen = 1
 $Threads = 2
 $Memory = 4608
 
-$app_version = "1.1.5"
 $temp_path = "C:\Chia\Plot"
 $farming_path = "D:\Crypto\Chia\Farm"
+$script_home_path = "D:\GitHub\create_chia_plots"
+
+$app_version = "1.1.5"
 
 $CurrentUser = [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
 $CurrentUserName = $CurrentUser.split("\")[1]
@@ -18,4 +20,4 @@ Write-host "..:: Starte Plotter ::.." -ForegroundColor Green -BackgroundColor Bl
 chia.exe plots create -f $Farmer_Public_Key -p $Pool_Public_Key -k 32 -n $Plots_erstellen -r $Threads -b $Memory -t $temp_path -d $farming_path
 Write-host "..:: Plotten abgeschlossen ::.." -ForegroundColor Green -BackgroundColor Black
 
-Set-Location -Path D:\GitHub\create_chia_plots
+Set-Location -Path $script_home_path
