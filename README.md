@@ -1,5 +1,6 @@
 # Chia Plots
-Dieses kleine und einfache Script erstellt einen Chia Plots. Die folgenden Variablen können gesetzt werden:
+Dieses kleine und einfache Script erstellt einen Chia Plots.
+Die folgenden Variablen können gesetzt werden:
 
 - `Pool_Public_Key` - hier die Pool Adresse eingeben.
 - `Farmer_Public_Key` - hier die Public Adresse eingeben.
@@ -11,7 +12,7 @@ Dieses kleine und einfache Script erstellt einen Chia Plots. Die folgenden Varia
 - `script_home_path` - Pfad von diesem Script.
 
 ## Public Pool und Farmer Key
-Um an ddie beiden Keys zu kommen, muss der folgende Befehl im folgenden Verzeichnis ausgeführt werden:
+Um an die beiden Keys zu kommen, muss der folgende Befehl im folgenden Verzeichnis ausgeführt werden:
 
 Der Pfad für die Chia Commandline:
 ```sh
