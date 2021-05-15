@@ -1,8 +1,5 @@
 # Chia Plots
-Kleines PowerShell Script zum Erstellen eines Chia Plots
-
-## Anleitung
-Dieses einfache Script erstellt einen Chia Plots. Die folgenden Variablen können gesetzt werden:
+Dieses kleine und einfache Script erstellt einen Chia Plots. Die folgenden Variablen können gesetzt werden:
 
 - `Pool_Public_Key` - hier die Pool Adresse eingeben.
 - `Farmer_Public_Key` - hier die Public Adresse eingeben.
