@@ -26,10 +26,11 @@ $Ende_Zeit = Get-Date -Format "dd.MM.yyyy HH:mm"
 $host.ui.RawUI.WindowTitle = 'Abgeschlossen ' + $Start_Zeit + ' Uhr - ' + $Ende_Zeit + ' Uhr'
 
 Write-host "..:: Plotten abgeschlossen ::.." -ForegroundColor Green -BackgroundColor Black
-Write-host "Plot Temp Pfad: $temp_path" -ForegroundColor Green -BackgroundColor Black
-Write-host "Farm Pfad:      $farming_path" -ForegroundColor Green -BackgroundColor Black
-Write-host "Start Zeit:     $Start_Zeit Uhr" -ForegroundColor Green -BackgroundColor Black
-Write-host "Ende Zeit:      $Ende_Zeit Uhr" -ForegroundColor Green -BackgroundColor Black
+Write-host "Anzahl der Plots: $Plots_erstellen" -ForegroundColor Green -BackgroundColor Black
+Write-host "Plot Temp Pfad:   $temp_path" -ForegroundColor Green -BackgroundColor Black
+Write-host "Farm Pfad:        $farming_path" -ForegroundColor Green -BackgroundColor Black
+Write-host "Start Zeit:       $Start_Zeit Uhr" -ForegroundColor Green -BackgroundColor Black
+Write-host "Ende Zeit:        $Ende_Zeit Uhr" -ForegroundColor Green -BackgroundColor Black
 Write-host "..:: Script beendet ::.." -ForegroundColor Green -BackgroundColor Black
 
 Set-Location -Path $script_home_path
