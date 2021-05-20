@@ -14,10 +14,22 @@ $app_version = "1.1.5"
 $CurrentUser = [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
 $CurrentUserName = $CurrentUser.split("\")[1]
 
+$Start_Zeit = Get-Date -Format "dd.MM.yyyy HH:mm"
+$host.ui.RawUI.WindowTitle = 'Plotter ' + $Start_Zeit + ' Uhr - ' + $temp_path + ' > ' + $farming_path
+
 Set-Location -Path C:\Users\$CurrentUserName\AppData\Local\chia-blockchain\app-$app_version\resources\app.asar.unpacked\daemon
 
 Write-host "..:: Starte Plotter ::.." -ForegroundColor Green -BackgroundColor Black
 chia.exe plots create -f $Farmer_Public_Key -p $Pool_Public_Key -k 32 -n $Plots_erstellen -r $Threads -b $Memory -t $temp_path -d $farming_path
+
+$Ende_Zeit = Get-Date -Format "dd.MM.yyyy HH:mm"
+$host.ui.RawUI.WindowTitle = 'Abgeschlossen ' + $Start_Zeit + ' Uhr - ' + $Ende_Zeit + ' Uhr'
+
 Write-host "..:: Plotten abgeschlossen ::.." -ForegroundColor Green -BackgroundColor Black
+Write-host "Plot Temp Pfad: $temp_path" -ForegroundColor Green -BackgroundColor Black
+Write-host "Farm Pfad: $farming_path" -ForegroundColor Green -BackgroundColor Black
+Write-host "Start Zeit: $Start_Zeit Uhr" -ForegroundColor Green -BackgroundColor Black
+Write-host "Ende Zeit:  $Ende_Zeit Uhr" -ForegroundColor Green -BackgroundColor Black
+Write-host "..:: Script beendet ::.." -ForegroundColor Green -BackgroundColor Black
 
 Set-Location -Path $script_home_path
