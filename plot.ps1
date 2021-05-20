@@ -27,9 +27,9 @@ $host.ui.RawUI.WindowTitle = 'Abgeschlossen ' + $Start_Zeit + ' Uhr - ' + $Ende_
 
 Write-host "..:: Plotten abgeschlossen ::.." -ForegroundColor Green -BackgroundColor Black
 Write-host "Plot Temp Pfad: $temp_path" -ForegroundColor Green -BackgroundColor Black
-Write-host "Farm Pfad: $farming_path" -ForegroundColor Green -BackgroundColor Black
-Write-host "Start Zeit: $Start_Zeit Uhr" -ForegroundColor Green -BackgroundColor Black
-Write-host "Ende Zeit:  $Ende_Zeit Uhr" -ForegroundColor Green -BackgroundColor Black
+Write-host "Farm Pfad:      $farming_path" -ForegroundColor Green -BackgroundColor Black
+Write-host "Start Zeit:     $Start_Zeit Uhr" -ForegroundColor Green -BackgroundColor Black
+Write-host "Ende Zeit:      $Ende_Zeit Uhr" -ForegroundColor Green -BackgroundColor Black
 Write-host "..:: Script beendet ::.." -ForegroundColor Green -BackgroundColor Black
 
 Set-Location -Path $script_home_path
