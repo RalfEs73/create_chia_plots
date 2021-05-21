@@ -9,7 +9,7 @@ $temp_path = "C:\Chia\Plot"
 $farming_path = "D:\Crypto\Chia\Farm"
 $script_home_path = "D:\GitHub\create_chia_plots"
 
-$app_version = "1.1.5"
+$app_version = "1.1.6"
 
 $CurrentUser = [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
 $CurrentUserName = $CurrentUser.split("\")[1]
